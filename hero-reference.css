@@ -85,3 +85,78 @@ header nav {
   .google-badge { width: 100%; }
   .hero-points { grid-template-columns: 1fr; }
 }
+
+/* Barra social y hero dividido. */
+.topbar {
+  gap: 18px;
+}
+
+.top-social {
+  display: flex;
+  gap: 7px;
+  margin-left: auto;
+}
+
+.top-social a {
+  align-items: center;
+  background: #071136;
+  color: #fff;
+  display: flex;
+  font-family: Arial, sans-serif;
+  font-size: .78rem;
+  font-weight: 700;
+  height: 27px;
+  justify-content: center;
+  width: 27px;
+}
+
+header nav .dropdown b {
+  color: var(--green-deep);
+  font-size: .9rem;
+  margin-left: 3px;
+}
+
+.hero {
+  background: none;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  min-height: 610px;
+}
+
+.hero::before,
+.hero::after {
+  display: none;
+}
+
+.hero-panel {
+  background: rgba(13, 27, 75, .97);
+  min-height: 610px;
+  position: relative;
+}
+
+.hero-image {
+  background: url('images/hero.png') center center / cover no-repeat;
+  min-height: 610px;
+}
+
+.hero-panel .hero-content {
+  padding: 85px 7vw 70px;
+}
+
+.hero-panel .hero-tag {
+  right: 7vw;
+}
+
+@media (max-width: 960px) {
+  header nav { gap: 13px; }
+  header nav a { font-size: .72rem; }
+}
+
+@media (max-width: 760px) {
+  .top-social { margin-left: 0; }
+  .topbar { justify-content: center; }
+  .topbar > div:last-child a[href^="tel"] { display: none; }
+  .hero { display: block; min-height: auto; }
+  .hero-panel { min-height: 610px; }
+  .hero-image { display: none; }
+}
