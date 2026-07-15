@@ -1,0 +1,87 @@
+/* Ajustes del hero inspirados en la composición de referencia. */
+header {
+  min-height: 92px;
+}
+
+header nav {
+  gap: clamp(14px, 2vw, 28px);
+}
+
+.hero {
+  min-height: 555px;
+  background-position: center 44%;
+  overflow: hidden;
+}
+
+.hero::before {
+  background: linear-gradient(90deg, rgba(13, 27, 75, .93) 0%, rgba(13, 27, 75, .82) 45%, rgba(13, 27, 75, .70) 70%, rgba(13, 27, 75, .34) 100%);
+}
+
+.hero::after {
+  background: var(--green);
+  clip-path: polygon(0 0, 27% 0, 100% 100%, 73% 100%);
+  content: "";
+  height: 100%;
+  left: 58%;
+  opacity: .95;
+  position: absolute;
+  top: 0;
+  transform: skewX(-9deg);
+  width: 34px;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 670px;
+  padding-bottom: 66px;
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 4.8vw, 4.6rem);
+  max-width: 650px;
+}
+
+.google-badge {
+  background: linear-gradient(90deg, #22c55e 0 55%, #fff 55%);
+  border: 2px solid var(--green);
+  border-radius: 0;
+  color: var(--navy);
+  font-size: .75rem;
+  padding: 10px 13px;
+  width: max-content;
+}
+
+.google-badge .stars {
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+}
+
+.google-badge .google {
+  box-shadow: 0 0 0 3px #fff;
+}
+
+.hero-points {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  line-height: 1.8;
+  margin-top: 31px;
+}
+
+.hero-points span {
+  color: var(--green);
+  font-family: Outfit, sans-serif;
+  font-size: .95rem;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.whatsapp b { font-size: .82rem; }
+
+@media (max-width: 760px) {
+  header { min-height: 72px; }
+  .hero { min-height: 650px; }
+  .hero::after { display: none; }
+  .hero::before { background: rgba(13, 27, 75, .78); }
+  .google-badge { width: 100%; }
+  .hero-points { grid-template-columns: 1fr; }
+}
