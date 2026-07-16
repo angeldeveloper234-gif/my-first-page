@@ -223,6 +223,68 @@ header nav .dropdown b {
   .hero-image { display: none; }
 }
 
+/* Correcciones puntuales de contenido del hero. */
+.google-badge {
+  background: var(--green);
+  border: 0;
+  color: #fff;
+}
+
+.google-badge b,
+.google-badge > span:last-child {
+  color: #fff;
+}
+
+.google-badge .google {
+  background: #fff;
+  box-shadow: none;
+  color: #4285f4;
+}
+
+.google-badge .stars {
+  color: #fff;
+  text-shadow: none;
+}
+
+.hero-panel .hero-tag {
+  bottom: 31px;
+  left: 7vw;
+  right: auto;
+  text-align: left;
+}
+
+.hero-image::after {
+  background: var(--green);
+  border-radius: 7px;
+  color: #fff;
+  content: "TÉCNICOS CERTIFICADOS";
+  font-family: "DM Sans", sans-serif;
+  font-size: .75rem;
+  font-weight: 800;
+  left: -64px;
+  padding: 12px 17px 30px;
+  position: absolute;
+  top: 37%;
+  z-index: 4;
+}
+
+.hero-image::before {
+  color: #fff;
+  content: "+15 años protegiendo Monterrey";
+  font-family: "DM Sans", sans-serif;
+  font-size: .67rem;
+  font-weight: 500;
+  left: -47px;
+  position: absolute;
+  top: calc(37% + 29px);
+  white-space: nowrap;
+  z-index: 5;
+}
+
+@media (max-width: 760px) {
+  .hero-panel .hero-tag { left: 7vw; }
+}
+
 /* Fondo completo + trabajador recortado nítido por encima del overlay. */
 .hero {
   background: url('images/hero.png') center center / cover no-repeat;
