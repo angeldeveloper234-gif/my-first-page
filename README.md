@@ -1,5 +1,5 @@
-# BigCat — Landing page
+# M&T Fumigaciones
 
-Landing page estática para una empresa mexicana de control de plagas.
+Landing page comercial para M&T Fumigaciones, orientada a generar consultas por WhatsApp en Monterrey y su área metropolitana.
 
-Abre `index.html` en un navegador. Antes de publicar, reemplaza el teléfono de ejemplo y el enlace de WhatsApp por los datos reales de BigCat.
+El proyecto usa HTML, CSS y JavaScript vanilla, sin build step. Para verlo localmente, abre `index.html` en un navegador.
