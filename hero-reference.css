@@ -137,6 +137,11 @@ header nav .dropdown b {
 .hero-image {
   background: url('images/hero.png') center center / cover no-repeat;
   min-height: 610px;
+  transition: opacity .26s ease;
+}
+
+.hero-image.is-changing {
+  opacity: .12;
 }
 
 .hero-panel .hero-content {
