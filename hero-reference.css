@@ -165,3 +165,27 @@ header nav .dropdown b {
   .hero-panel { min-height: 610px; }
   .hero-image { display: none; }
 }
+
+/* Hero completo sobre imagen local: solo se cambia el fondo y su overlay. */
+.hero {
+  background: url('images/hero.png') center center / cover no-repeat;
+  display: block;
+  min-height: 610px;
+}
+
+.hero::before {
+  background: rgba(13, 27, 75, .65);
+  display: block;
+  z-index: 0;
+}
+
+.hero-panel {
+  background: transparent;
+  min-height: 610px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image {
+  display: none;
+}
