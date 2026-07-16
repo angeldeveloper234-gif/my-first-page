@@ -135,7 +135,7 @@ header nav .dropdown b {
 }
 
 .hero-image {
-  background: url('images/hero.png') center center / cover no-repeat;
+  background: url('https://images.pexels.com/photos/4894608/pexels-photo-4894608.jpeg?auto=compress&cs=tinysrgb&w=1600') center center / cover no-repeat;
   min-height: 610px;
   transition: opacity .26s ease;
 }

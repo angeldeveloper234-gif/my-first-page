@@ -15,9 +15,9 @@ nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () =>
 
 const heroImage = document.querySelector('.hero-image');
 const heroImages = [
-  'images/hero.png',
-  'images/worker1%20(1).jpg',
-  'images/worker1%20(2).jpg',
+  'https://images.pexels.com/photos/4894608/pexels-photo-4894608.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  'https://images.pexels.com/photos/19789837/pexels-photo-19789837.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  'https://images.pexels.com/photos/17903068/pexels-photo-17903068.jpeg?auto=compress&cs=tinysrgb&w=1600',
 ];
 
 if (heroImage) {
