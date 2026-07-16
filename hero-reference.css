@@ -189,3 +189,36 @@ header nav .dropdown b {
 .hero-image {
   display: none;
 }
+
+/* Hero 60/40: el trabajador emerge desde el borde derecho sobre navy. */
+.hero {
+  background: var(--navy);
+  display: grid;
+  grid-template-columns: 60% 40%;
+  min-height: 610px;
+}
+
+.hero::before,
+.hero::after {
+  display: none;
+}
+
+.hero-panel {
+  background: var(--navy);
+  min-height: 610px;
+  z-index: 1;
+}
+
+.hero-image {
+  background: url('images/person-backround.png') right bottom / auto 100% no-repeat;
+  display: block;
+  min-height: 610px;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  overflow: hidden;
+}
+
+@media (max-width: 760px) {
+  .hero { display: block; }
+  .hero-image { display: none; }
+}
