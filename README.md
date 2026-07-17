@@ -1,5 +1,12 @@
 # M&T Fumigaciones
 
-Landing page comercial para M&T Fumigaciones, orientada a generar consultas por WhatsApp en Monterrey y su área metropolitana.
+Sitio comercial multi-página para M&T Fumigaciones, orientado a búsquedas locales y consultas por WhatsApp en Monterrey y su área metropolitana.
 
-El proyecto usa HTML, CSS y JavaScript vanilla, sin build step. Para verlo localmente, abre `index.html` en un navegador.
+## Arquitectura
+
+- Home, Nosotros y Contacto.
+- Hub de Servicios y cinco páginas de tratamiento.
+- Hub de Cobertura y cuatro páginas de zona.
+- Hub del Blog y seis artículos.
+
+Son 21 páginas HTML que comparten `styles.css` y `script.js`. No requiere build step ni dependencias: cualquier página se puede abrir directamente en el navegador.
